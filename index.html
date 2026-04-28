@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Omega Window Services | Premium Window Sales & Installation in Malden, MA</title>
+    <meta name="description"
+        content="Alpha Omega Window Services — Professional window sales and expert installation in Malden, MA and Greater Boston. Premium products, precision fit, and energy-efficient solutions.">
+    <meta name="keywords"
+        content="Window Sales Malden MA, Window Installation Malden, Replacement Windows Greater Boston, Vinyl Windows Malden MA, Alpha Omega Window Services">
+    <meta name="author" content="Alpha Omega Window Services">
+    <link rel="canonical" href="alpha-omega-windows-demo.vercel.app
+">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="alpha-omega-windows-demo.vercel.app
+">
+    <meta property="og:title" content="Alpha Omega Window Services | Sales & Installation">
+    <meta property="og:description"
+        content="Professional window sales and expert installation in Malden, MA. Premium products and precision workmanship.">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="alpha-omega-windows-demo.vercel.app
+">
+    <meta property="twitter:title" content="Alpha Omega Window Services">
+    <meta property="twitter:description"
+        content="Professional window sales and installation in Malden, MA. Reliable, professional, and fair.">
+    <meta property="twitter:image" content="logo.png">
+
+    <!-- Structured Data (JSON-LD) for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Alpha Omega Window Services",
+      "image": "logo.png",
+      "@id": "alpha-omega-windows-demo.vercel.app
+",
+      "url": "alpha-omega-windows-demo.vercel.app
+",
+      "telephone": "+18578881146",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "18 Bartlett St.",
+        "addressLocality": "Malden",
+        "addressRegion": "MA",
+        "postalCode": "02148",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.4251,
+        "longitude": -71.0662
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://alphaomegapropertyservices.com/"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Malden"
+      }
+    }
+    </script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            /* Industrial Earth Palette (Pantone Swatches) */
+            --brand-charcoal: #1A1A1A;
+            --brand-brown-dark: #4D443F;
+            --brand-ochre: #E69138;
+            --brand-terracotta: #9E4632;
+            --brand-sand: #C2B5A3;
+
+            /* Logic Mapping */
+            --navy: var(--brand-charcoal);
+            --navy-mid: var(--brand-brown-dark);
+            --gold: var(--brand-ochre);
+            --gold-light: #F3A350;
+            --cream: var(--brand-sand);
+
+            --warm-white: #fdfbf8;
+            --text-dark: #1a1a1a;
+            --text-mid: #4a4a4a;
+            --text-light: #7a7a7a;
+            --serif: 'Playfair Display', Georgia, serif;
+            --sans: 'DM Sans', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--sans);
+            background: var(--warm-white);
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* SIDEBAR NAV */
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 240px;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1.5rem;
+            background: var(--navy);
+            border-left: 1px solid rgba(230, 145, 56, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .nav-logo {
+            margin-bottom: 4rem;
+            text-decoration: none;
+        }
+
+        .nav-logo img {
+            height: 52px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            list-style: none;
+            width: 100%;
+        }
+
+        .nav-links li {
+            width: 100%;
+        }
+
+        .nav-links a {
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            transition: all 0.3s;
+            display: block;
+            padding: 0.75rem 1rem;
+            border-left: 2px solid transparent;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold-light);
+            padding-left: 1.5rem;
+        }
+
+        .nav-links a.active {
+            color: var(--gold);
+            border-left-color: var(--gold);
+            padding-left: 1.5rem;
+            background: rgba(230, 145, 56, 0.05);
+        }
+
+        .nav-cta {
+            margin-top: auto;
+            background: var(--gold);
+            color: #fff !important;
+            padding: 0.9rem 1.5rem !important;
+            border-radius: 3px;
+            text-align: center;
+            width: 100%;
+            border: none !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--gold-light) !important;
+            color: var(--navy) !important;
+            padding-left: 1.5rem !important;
+        }
+
+        /* Adjust main content for sidebar */
+        body {
+            padding-right: 240px;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            background: var(--navy);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://alphaomegapropertyservices.com/wp-content/uploads/2020/07/hero-bg.jpg') center/cover no-repeat;
+            opacity: 0.18;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 8rem 4rem 6rem 5rem;
+        }
+
+        .hero-eyebrow {
+            font-family: var(--sans);
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .hero-eyebrow::before {
+            content: '';
+            display: inline-block;
+            width: 32px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .hero h1 {
+            font-family: var(--serif);
+            font-size: clamp(2.8rem, 5vw, 4.2rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: var(--gold-light);
+        }
+
+        .hero-sub {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.65);
+            max-width: 440px;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: var(--gold);
+            color: #fff;
+            font-family: var(--sans);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.9rem 2rem;
+            border-radius: 3px;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.15s;
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            display: inline-block;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            color: rgba(255, 255, 255, 0.85);
+            font-family: var(--sans);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.9rem 2rem;
+            border-radius: 3px;
+            text-decoration: none;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--gold-light);
+            color: var(--gold-light);
+        }
+
+        .hero-logo-area {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem;
+        }
+
+        .hero-logo-box {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(230, 145, 56, 0.3);
+            border-radius: 6px;
+            padding: 3rem 3.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            max-width: 340px;
+            width: 100%;
+        }
+
+        .hero-logo-box img {
+            width: 200px;
+        }
+
+        .hero-tagline {
+            font-family: var(--serif);
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            font-style: italic;
+        }
+
+        .hero-divider {
+            width: 40px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        /* SERVICES */
+        .section {
+            padding: 6rem 5rem;
+        }
+
+        .section-label {
+            font-family: var(--sans);
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-label::before {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .section-title {
+            font-family: var(--serif);
+            font-size: clamp(2rem, 3.5vw, 2.8rem);
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.25;
+            margin-bottom: 1rem;
+            max-width: 560px;
+        }
+
+        .section-desc {
+            font-size: 1.025rem;
+            color: var(--text-mid);
+            max-width: 600px;
+            line-height: 1.9;
+            margin-bottom: 3.5rem;
+            font-weight: 300;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5px;
+            background: #e5dfd6;
+        }
+
+        .service-card {
+            background: var(--warm-white);
+            padding: 2.5rem 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.2s;
+        }
+
+        .service-card:hover {
+            background: var(--navy);
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .service-card:hover::after {
+            width: 100%;
+        }
+
+        .service-icon {
+            width: 44px;
+            height: 44px;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+
+        .service-card h3 {
+            font-family: var(--serif);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.75rem;
+            transition: color 0.2s;
+        }
+
+        .service-card:hover h3 {
+            color: #fff;
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+            color: var(--text-mid);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            transition: color 0.2s;
+        }
+
+        .service-card:hover p {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .service-link {
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .service-link::after {
+            content: '→';
+        }
+
+        .service-card:hover .service-link {
+            color: var(--gold-light);
+        }
+
+        /* ABOUT */
+        .about-section {
+            background: var(--navy);
+            padding: 6rem 5rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+        }
+
+        .about-body {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 1rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .value-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .value-item::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        /* CONTACT STRIP */
+        .contact-strip {
+            background: var(--navy-mid);
+            padding: 4rem 5rem;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .contact-info h2 {
+            font-family: var(--serif);
+            font-size: 1.9rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-details {
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .contact-label {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        .contact-value {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--navy);
+            padding: 2rem 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        footer img {
+            height: 32px;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                padding: 1rem 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-logo-area {
+                display: none;
+            }
+
+            .hero-content {
+                padding: 7rem 2rem 4rem;
+            }
+
+            .section {
+                padding: 4rem 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-section {
+                padding: 4rem 2rem;
+            }
+
+            .contact-strip {
+                grid-template-columns: 1fr;
+                padding: 3rem 2rem;
+            }
+
+            footer {
+                padding: 1.5rem 2rem;
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            /* Mobile Nav Reset */
+            nav {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 1.5rem 2rem;
+                border-left: none;
+                border-bottom: 1px solid rgba(230, 145, 56, 0.2);
+            }
+
+            .nav-logo {
+                margin-bottom: 1.5rem;
+            }
+
+            .nav-links {
+                display: none; /* Hide link list on mobile for simplicity */
+            }
+
+            body {
+                padding-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#home" class="nav-logo">
+            <img src="logo.png" alt="Alpha Omega Windows">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#handyman">Handyman</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://alphaomegapropertyservices.com/contact/" class="nav-cta">Get a Quote</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-eyebrow">Malden, Massachusetts</div>
+            <h1>Quality Sales.<br>Expert<br><em>Installation.</em></h1>
+            <p class="hero-sub">Professional window sales, expert installation, and high-performance energy solutions. We bring clarity and value to your home.</p>
+            <div class="hero-actions">
+                <a href="https://alphaomegapropertyservices.com/contact/" class="btn-primary">Get a Quote</a>
+                <a href="#services" class="btn-outline">Our Services</a>
+            </div>
+        </div>
+        <div class="hero-logo-area">
+            <div class="hero-logo-box">
+                <img src="logo.png" alt="Alpha Omega">
+                <div class="hero-divider"></div>
+                <p class="hero-tagline">Alpha Omega Windows — Excellence<br>in every installation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+        <div class="section-label">Window Services</div>
+        <h2 class="section-title">Superior products. Seamless installation.</h2>
+        <p class="section-desc">Located in Malden, Massachusetts, we provide end-to-end window solutions. From helping you select high-performance products to expert final installation, we handle it all.</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <!-- Icon: Window Sales -->
+                <svg class="service-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" y="8" width="28" height="28" rx="2" stroke="var(--brand-orange)" stroke-width="2"/>
+                    <path d="M14 22H30" stroke="var(--brand-orange)" stroke-width="1.5"/>
+                    <path d="M22 14V30" stroke="var(--brand-orange)" stroke-width="1.5"/>
+                </svg>
+                <h3>Window Sales</h3>
+                <p>Access to top-tier vinyl, wood, and fiberglass window lines. We help you find the perfect style and efficiency rating for your budget.</p>
+                <a href="https://alphaomegapropertyservices.com/contact/" class="service-link">View Products</a>
+            </div>
+            <div class="service-card">
+                <!-- Icon: Full Installation -->
+                <svg class="service-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10V34H34V10H10Z" stroke="var(--brand-orange)" stroke-width="2"/>
+                    <path d="M22 10V34M10 22H34" stroke="var(--brand-orange)" stroke-width="1.5"/>
+                    <path d="M6 38H38" stroke="var(--brand-orange)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <h3>Expert Installation</h3>
+                <p>Professional full-frame and insert installations. Our team ensures airtight seals and precision trimming for every unit.</p>
+                <a href="https://alphaomegapropertyservices.com/contact/" class="service-link">Get a Quote</a>
+            </div>
+            <div class="service-card">
+                <!-- Icon: Custom Sizing -->
+                <svg class="service-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 34L38 34" stroke="var(--brand-orange)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <path d="M6 30V38M38 30V38" stroke="var(--brand-orange)" stroke-width="2"/>
+                    <rect x="12" y="10" width="20" height="24" stroke="var(--brand-orange)" stroke-width="1.5"/>
+                </svg>
+                <h3>Custom Sizing</h3>
+                <p>Have a unique architectural opening? We specialize in custom-measured windows tailored to your home's exact specifications.</p>
+                <a href="https://alphaomegapropertyservices.com/contact/" class="service-link">Free Measure</a>
+            </div>
+            <div class="service-card">
+                <!-- Icon: Efficiency Consulting -->
+                <svg class="service-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="22" cy="22" r="14" stroke="var(--brand-orange)" stroke-width="2"/>
+                    <path d="M22 12V22L28 26" stroke="var(--brand-orange)" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M22 6V8M22 36V38M6 22H8M36 22H38" stroke="var(--brand-orange)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <h3>Efficiency Consulting</h3>
+                <p>Maximize your energy savings with expert advice on Energy Star® ratings, U-factors, and regional efficiency requirements.</p>
+                <a href="https://alphaomegapropertyservices.com/contact/" class="service-link">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <div class="section-label">Who We Are</div>
+            <h2 class="section-title" style="color:#fff;">Dedicated window specialists committed to excellence</h2>
+            <p class="about-body">As part of the Alpha Omega family, we specialize in the sales and professional installation of high-performance windows. Our team brings decades of combined experience in construction and architectural glass to the Malden community.</p>
+            <p class="about-body" style="margin-bottom:2rem;">Alpha Omega Window Services is the specialized division of our father-son team, focused on delivering transparency, energy efficiency, and high-quality installation workmanship.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2.5rem;">
+                <div class="value-item">Answer the phone</div>
+                <div class="value-item">Show up on time</div>
+                <div class="value-item">Clean up after ourselves</div>
+                <div class="value-item">Fair, honest pricing</div>
+            </div>
+            <a href="https://alphaomegapropertyservices.com/contact/" class="btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- CROSS PROMOTION -->
+    <section class="section" id="handyman" style="background: var(--navy); padding: 4rem 5rem; text-align: center;">
+        <div class="section-label" style="justify-content: center; margin-bottom: 1.5rem;">Other Repairs?</div>
+        <h2 class="section-title" style="color: #fff; margin: 0 auto 1.5rem;">Need other repairs done? We also do handyman work.</h2>
+        <p style="color: rgba(255,255,255,0.6); max-width: 600px; margin: 0 auto 2.5rem;">From painting and carpentry to general property maintenance, our handyman division has you covered.</p>
+        <a href="https://alphaomegapropertyservices.com" class="btn-primary">Visit Alpha Omega Property Services</a>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="section" id="booking" style="background: var(--cream); text-align: center;">
+        <div class="section-label" style="justify-content: center;">Contact Us</div>
+        <h2 class="section-title">Schedule Your Window Consultation</h2>
+        <p class="section-desc">Ready to get started? Visit our main contact page to reach out and schedule a free consultation.</p>
+        <a href="https://alphaomegapropertyservices.com/contact/" class="btn-primary" style="display: inline-block;">Go to Contact Page</a>
+    </section>
+
+    <!-- CONTACT STRIP -->
+    <div class="contact-strip" id="contact">
+        <div class="contact-info">
+            <h2>Ready to get started?</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span class="contact-label">Address</span>
+                    <span class="contact-value">18 Bartlett St., Malden, MA 02148</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:matthew@ao-pros.com" class="contact-value"
+                        style="color:rgba(255,255,255,0.8);text-decoration:none;">matthew@ao-pros.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Phone</span>
+                    <a href="tel:8578881146" class="contact-value"
+                        style="color:rgba(255,255,255,0.8);text-decoration:none;">(857) 888-1146</a>
+                </div>
+            </div>
+        </div>
+        <a href="https://alphaomegapropertyservices.com/contact/" class="btn-primary" style="white-space:nowrap;">Get a Quote →</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="logo.png" alt="Alpha Omega Windows">
+        <span style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.4);">© 2026 Alpha Omega Window Services. A division of Alpha Omega Property Services.</span>
+    </footer>
+
+    <!-- Scrollspy Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section, div.contact-strip');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            const observerOptions = {
+                root: null,
+                threshold: 0.3,
+                rootMargin: "0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        if (!id) return;
+                        
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                if (section.getAttribute('id')) {
+                    observer.observe(section);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
