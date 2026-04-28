@@ -5,15 +5,5 @@
       "src": "index.html",
       "use": "@vercel/static"
     }
-  ],
-  "routes": [
-    {
-      "source": "/(.*\\.(png|jpg|jpeg|gif|svg|webp|css|js|json|txt|ico|webmanifest))",
-      "dest": "/$1"
-    },
-    {
-      "source": "/(.*)",
-      "dest": "/index.html"
-    }
   ]
 }
